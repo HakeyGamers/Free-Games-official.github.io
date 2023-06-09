@@ -1,0 +1,71 @@
+  /* CSS styles for the website */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://c4.wallpaperflare.com/wallpaper/247/516/27/best-games-game-ps4-firewatch-wallpaper-preview.jpg");
+    background-size: cover;
+    background-position: center;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+  }
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  .game {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+  }
+  .game h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .game p {
+    margin-bottom: 10px;
+  }
+  .next-page {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .next-page a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  .next-page a:hover {
+    background-color: #555;
+  }
+  .next-page a::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid #fff;
+    margin-left: 10px;
+  }
+  .search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  .search-bar input {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+  }
+

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Gamesforfree</title>
+  <style>
+    /* CSS styles for the website */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url("https://c4.wallpaperflare.com/wallpaper/247/516/27/best-games-game-ps4-firewatch-wallpaper-preview.jpg");
+      background-size: cover;
+      background-position: center;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .game {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #f7f7f7;
+      border-radius: 5px;
+    }
+
+    .game h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .game p {
+      margin-bottom: 10px;
+    }
+
+    .next-page {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .next-page a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .next-page a:hover {
+      background-color: #555;
+    }
+
+    .next-page a::after {
+      content: "";
+      display: inline-block;
+      width: 0;
+      height: 0;
+      border-top: 5px solid transparent;
+      border-bottom: 5px solid transparent;
+      border-left: 5px solid #fff;
+      margin-left: 10px;
+    }
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .search-bar input {
+      width: 300px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+    }
+
+    .comments {
+      margin-top: 20px;
+    }
+
+    .comments h3 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .comments textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: none;
+      margin-bottom: 10px;
+    }
+
+    .comments button {
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .comments button:hover {
+      background-color: #555;
+    }
+
+    .comments .comment {
+      background-color: #f7f7f7;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+
+    .comments .comment p {
+      margin-bottom: 5px;
+    }
+  </style>
+  <script>
+    function searchGame() {
+      var input = document.getElementById("searchInput").value.toLowerCase();
+      var games = document.getElementsByClassName("game");
+
+      for (var i = 0; i < games.length; i++) {
+        var gameTitle = games[i].getElementsByTagName("h2")[0].textContent.toLowerCase();
+        if (gameTitle.includes(input)) {
+          games[i].style.display = "block";
+        } else {
+          games[i].style.display = "none";
+        }
+      }
+    }
+
+    function addComment() {
+      var commentInput = document.getElementById("commentInput");
+      var commentText = commentInput.value;
+
+      if (commentText.trim() !== "") {
+        var commentSection = document.getElementById("commentSection");
+        var comment = document.createElement("div");
+        comment.className = "comment";
+        comment.innerHTML = "<p>" + commentText + "</p>";
+        commentSection.appendChild(comment);
+
+        commentInput.value = "";
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <header>
+    <h1>Welcome to Gamesforfree</h1>
+  </header>
+  <main>
+    <div class="game">
+      <h2>GtaIII</h2>
+      <img class="thumbnail" src="https://hisgames.org/images2/poster/216/poster_gta-3.jpg" alt="GTAIII Thumbnail">
+      <p>Direct download</p><a
+        href="http://easy-learn-tech.info/file-will-start-automatically-on-this-page-after-few-seconds-installation-video-guide-is-in-progress/">Download</a>
+      <p>Torrent download</p><a href="https://hisgames.org/torrents2/42/gta-3.torrent">Download</a>
+      <p>System Requirements:</p>
+      <ul>
+        <li>OS: Windows XP/Vista/7/8/10</li>
+        <li>Processor: Intel Pentium 4 or AMD Athlon XP</li>
+        <li>Memory: 1 GB RAM</li>
+        <li>Graphics: 128MB DirectX 9 compatible video card</li>
+        <li>Storage: 1 GB available space</li>
+      </ul>
+    </div>
+    <div class="game">
+      <h2>Gta Vice City</h2>
+      <img class="thumbnail"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSF3fjFQQ5fe7S0p_k3yjCvpJuGXN6HWj5HgezOXoR2SmR5ycAk&s"
+        alt="GTA Vice City Thumbnail">
+      <p>Direct download</p><a
+        href="http://easy-learn-tech.info/file-will-start-automatically-on-this-page-after-few-seconds-installation-video-guide-is-in-progress/">Download</a>
+      <p>Torrent download</p><a href="https://hisgames.org/torrents/59/gta-vice-city.torrent">Download</a>
+      <p>System Requirements:</p>
+      <ul>
+        <li>OS: Windows XP/Vista/7/8/10</li>
+        <li>Processor: Intel Pentium 4 or AMD Athlon XP</li>
+        <li>Memory: 1 GB RAM</li>
+        <li>Graphics: 128MB DirectX 9 compatible video card</li>
+        <li>Storage: 1.5 GB available space</li>
+      </ul>
+    </div>
+    <div class="game">
+      <h2>Gta San Andreas</h2>
+      <img class="thumbnail"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsMcTllJUpM9U9zDTz2Uwn7MPn3tU_x8BkvSPH3kwEQQph0Tw&s"
+        alt="GTA Vice City Thumbnail">
+      <p>Torrent download</p><a href="https://hisgames.org/torrents/61/gta-san-andreas-original.torrent">Download</a>
+      <p>Direct download</p><a
+        href="http://easy-learn-tech.info/file-will-start-automatically-on-this-page-after-few-seconds-installation-video-guide-is-in-progress/">Download</a>
+      <p>System Requirements:</p>
+      <ul>
+        <li>OS: Windows 2000/XP</li>
+        <li>Processor: 1GHz Pentium III or AMD Athlon</li>
+        <li>Memory: 256 MB RAM</li>
+        <li>Graphics: 64 MB DirectX 8.1 compatible video card</li>
+        <li>Storage: 3.6 GB available space</li>
+      </ul>
+    </div>
+    <div class="game">
+      <img class="thumbnail"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSq9yoGevc3mLtT_KI1fUPYBOYP9IzXSRAeDnZrgx9xhJ-1IxYU&s"
+        alt="GTA IV Thumbnail">
+      <h2>Gta IV</h2>
+      <p>Torrent download</p><a href="https://hisgames.org/torrents/64/gta-4.torrent">Download</a>
+      <p>Direct download</p><a href="http://oceanofgames.com/gta-iv-updates-free-download-8695832/">Download</a>
+      <p>System Requirements:</p>
+      <ul>
+        <li>OS: Windows 7/8/10 64-bit</li>
+        <li>Processor: Intel Core 2 Duo 1.8GHz, AMD Athlon X2 64 2.4GHz</li>
+        <li>Memory: 2 GB RAM</li>
+        <li>Graphics: NVIDIA 7900 GT 512 MB
+      </ul>
+    </div>
+
+    <!-- <ul>
+            <li>OS: Windows 7/8/10 64-bit</li>
+            <li>Processor: Intel Core 2 Duo 1.8GHz, AMD Athlon X2 64 2.4GHz</li>
+            <li>Memory: 2 GB RAM</li>
+            <li>Graphics: NVIDIA 7900 GT 512 MB -->
+
+    <div class="game">
+      <h2>Gta Trilogy The Definitive Edition</h2>
+      <img class="thumbnail"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQT8LT3uX6tJg-DehsF6dB1wPfk3_bcWeNE6Ui_ti6lxGvYvDFp&s"
+        alt="GTA Trilogy grand-theft-auto-trilogy-definitive Thumbnail">
+
+      <p>Torrent download</p><a
+        href="https://hisgames.org/torrents2/17/grand-theft-auto-trilogy-definitive">Download</a>
+      <p>System Requirements:</p>
+      <ul>
+        <li>OS: Windows 7/8/10 64-bit</li>
+        <li>Processor: Intel Core 2 Duo 1.8GHz, AMD Athlon X2 64 2.4GHz</li>
+        <li>Memory: 2 GB RAM</li>
+        <li>Graphics: NVIDIA 7900 GT 512 MB
+          <div class="game">
+            <h2>GTA 5 Online (GTA 5 Online) </h2>
+            <img class="thumbnail"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJWbhvgLD9NcKoHPRSJEOIO1Rj2YL1pttbN5_W0_lo_4m08t4&s"
+              alt="gta-5-online-gta-5-online">
+
+            <p>Direct download</p><a
+              href="https://hisgames.org/torrents/66/gta-5-online-gta-5-onlajn.torrent">Download</a>
+            <p>Torrent download</p><a href="">Download</a>
+            <p>System Requirements:</p>
+            <ul>
+              <li>OS: Windows 7/8/8.1/10 64-bit</li>
+              <li>Processor: Intel Core 2 Quad CPU Q6600 @ 2.40GHz (4 CPUs) / AMD Phenom 9850 Quad-Core Processor (4
+                CPUs) @ 2.5GHz</li>
+              <li>Memory: 4 GB RAM</li>
+              <li>Graphics: NVIDIA 9800 GT 1GB / AMD HD 4870 1GB (DX 10, 10.1, 11)</li>
+              <li>Storage: 72 GB available space</li>
+            </ul>
+          </div>
+          <!-- <div class="game">
+                          <h2>Gta Trilogy The Definitive Edition</h2>
+                          <p>Torrent download</p><a href="https://hisgames.org/torrents2/17/grand-theft-auto-trilogy-definitive">Download</a>
+                          <p>System Requirements:</p>
+                          <ul>
+                            <li>OS: Windows 7/8/10 64-bit</li>
+                            <li>Processor: Intel Core 2 Duo 1.8GHz, AMD Athlon X2 64 2.4GHz</li>
+                            <li>Memory: 2 GB RAM</li>
+                            <li>Graphics: NVIDIA 7900 GT 512 MB
+                              RAM, AMD Radeon HD 2900 XT 512 MB RAM</li>
+                              <li>Storage: 32 GB available space</li>
+                              </ul>
+                              </div> -->
+          <div class="game">
+            <h2>Forza Horizon 4</h2>
+            <img class="thumbnail"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqaSHfY19DWBEcpHF-tV_36aUjp9JBB2N4pN_mVolklbv3a1Yn&s"
+              alt="forza-horizon-4">
+            <p>Direct download</p><a
+              href="http://easy-learn-tech.info/file-will-start-automatically-on-this-page-after-few-seconds-installation-video-guide-is-in-progress/">Download</a>
+            <p>Torrent Download</p><a href="https://hisgames.org/torrents2/72/forza-horizon-4.torrent">Download</a>
+            <p>System Requirements:</p>
+            <ul>
+              <li>OS: Windows 10 version 15063.0 or higher</li>
+              <li>Processor: Intel i3-4170 @ 3.7Ghz OR Intel i5 750 @ 2.67Ghz</li>
+              <li>Memory: 8 GB RAM</li>
+              <li>Graphics: NVIDIA 650TI OR AMD R7 250x</li>
+              <li>Storage: 80 GB available space</li>
+            </ul>
+          </div>
+          <div class="game">
+            <h2>Resident Evil 4 Remake</h2>
+            <img class="thumbnail" src="https://hisgames.org/images5/1/Resident_Evil_4-1.jpg" alt="forza-horizon-4">
+
+            <p>Torrent Download</p><a
+              href="https://hisgames.org/torrents5/1/[hisgames.org]Resident_Evil_4.torrent">Download</a>
+            <p>System Requirements:</p>
+            <ul>
+              <li>OS:Windows 10 and above </li>
+              <li>Processor: AMD Ryzen 3 1200</li>
+              <li>Memory: 8 Gb</li>
+              <li>Graphics: AMD Radeon RX 560 with 4Gb</li>
+              <li>Storage: 59.6 Gb</li>
+            </ul>
+          </div>
+          <div class="game">
+            <h2>Republique</h2>
+            <img class="thumbnail"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW6lCvdhzEEFAT6bXzspbtZVi8yuh6IRiUj2NDq7CMQ3AOba4&s"
+              alt="forza-horizon-4">
+            <p>Torrent Download</p><a href="https://hisgames.org/torrents/35/republique.torrent">Download</a>
+            <p>System Requirements:</p>
+            <ul>
+              <li>OS: Windows Vista/7/8/10 (64-bit)</li>
+              <li>Processor: Intel Core i3 2.4GHz or AMD Phenom II X4 2.8GHz or better</li>
+              <li>Memory: 2 GB RAM</li>
+              <li>Graphics: NVIDIA GeForce GTX 470 or AMD Radeon HD 5850</li>
+              <li>Storage: 8 GB available space</li>
+            </ul>
+
+          </div>
+          <div class="game">
+            <h2>Mafia</h2>
+            <img class="thumbnail"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmZyP_wqBcxD12JhKkH3geMMZRcm4l6-Ge9I6k8CndnDYKwwA&s"
+              alt="forza-horizon-4">
+
+            <p>Direct Download</p><a
+              href="http://easy-learn-tech.info/file-will-start-automatically-on-this-page-after-few-seconds-installation-video-guide-is-in-progress/"
+              a>
+              <p>Torrent Download</p><a href="https://hisgames.org/torrents/75/mafia.torrent" a></a>
+              <p>System Requirements:</p>
+              <ul>
+                <li>OS: Windows XP (SP3) / Vista / 7 / 8 / 10</li>
+                <li>Processor: 1.4 GHz or faster</li>
+                <li>Memory: 2 GB RAM</li>
+                <li>Graphics: DirectX 9.0c compatible video card with 512 MB RAM</li>
+                <li>Storage: 3 GB available space</li>
+              </ul>
+              <div class="game">
+                <h2>Choo Choo Charls</h2>
+                <img class="thumbnail"
+                  src="https://hisgames.org/images/thumbnails/images4/poster/045/poster_choo-choo-charles-fill-200x300.jpg"
+                  alt="forza-horizon-4">
+
+                <p>Direct Download</p><a href="Link" a>
+                  <p>Torrent Download</p><a href="https://hisgames.org/torrent4/05/choo-choo-charles.torrent" a></a>
+                  <p>System Requirements:</p>
+                  <ul>
+                    <li>OS: Windows 7, 8, 10 (64 bit)</li>
+                    <li>Processor: 2.5 GHz Quad-core Intel or AMD processor</li>
+                    <li>Memory: 4 Gb</li>
+                    <li>Graphics: NVIDIA GeForce 470 GTX or AMD Radeon 6870 HD</li>
+                    <li>Storage: 2.28 Gb</li>
+                  </ul>
+
+
+
+
+                    </ul>
+                    <div class="game">
+                      <h2>Cricket 07</h2>
+                      <img class="thumbnail"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLhT1LyO43asPAyP_u6dJIUdqrbwxSVLcci-D95e05Li3ehxk&s">
+
+                      <p>Direct Download</p><a
+                        href="http://easy-learn-tech.info/file-will-start-automatically-on-this-page-after-few-seconds-installation-video-guide-is-in-progress/"
+                      a>Download
+                </a>
+                <p>Torrent Download(Not Available)
+                  <!-- </p><a href=""a>N.A</a> -->
+                <p>System Requirements:(To be edited)</p>
+                <ul>
+                  <li>OS: Windows 7, 8, 10 (64 bit)</li>
+                  <li>Processor: 2.5 GHz Quad-core Intel or AMD processor</li>
+                  <li>Memory: 4 Gb</li>
+                  <li>Graphics: NVIDIA GeForce 470 GTX or AMD Radeon 6870 HD</li>
+                  <li>Storage: 2.28 Gb</li>
+                </ul>
+
+                <div class="game">
+                  <h2>Hogwarts-Legacy</h2>
+                  <img class="thumbnail" src="https://hisgames.org/images5/1/hogwarts_legacy-1.jpg" forza-horizon-4>
+
+                  <!-- <p>Direct Download(not avaliable )</p><a
+                    href="http://easy-learn-tech.info/file-will-start-automatically-on-this-page-after-few-seconds-installation-video-guide-is-in-progress/"
+                    a>Download</a> -->
+                  <p>Torrent Download</p><a
+                    href="https://hisgames.org/torrents5/1/[hisgames.org]hogwarts_legacy.torrent" a>Download</a>
+                  <p>System Requirements:(To be edited)</p>
+                  <ul>
+                    <li>OS: Windows 7, 8, 10</li>
+                    <li>Processor: Intel Core i5-6600 (3.3Ghz)</li>
+                    <li>Graphics: NVIDIA GeForce GTX 960</li>
+                    <li>Memory: 16 GB</li>
+                    <li>Storage: 72.93Gb</li>
+
+                <div class="comments">
+                  <h3>Comments</h3>
+                  <textarea id="commentInput" placeholder="Add a comment"></textarea>
+                  <button onclick="addComment()">Add Comment</button>
+                  <div id="commentSection"></div>
+                <!-- </div>
+                <div class="compressed games" 
+                <h3></h3>Download compressed games(coming soon)</h3 -->
+
+
+                  <h5>Your Game not listed? No problem you can <a
+                      href="https://docs.google.com/forms/d/1zTlB239nAW5-JZsGOnkruuAPL2CK2o6x1_ZYzPwcxd0/edit?pli=1">request
+                      here</a> we'll try bring it asap.</p>
+                  </h5>
+                  <p>
+                  <h5>How To install these games on Linux?</h5>
+                  </p>
+  </main>
+</body>
+
+</html>
